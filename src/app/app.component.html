@@ -1,0 +1,15 @@
+<hello name="{{ name }}"></hello>
+<p>This is an example of Angular Animation - Text Typing using third party library "{{ '{' }}" npm install angular-typing-animation --save "{{ '}' }}" </p>
+<div>
+    <span typingAnimation [typeSpeed]="50" [condition]="start" [startDelay]="1000" (complete)="onTypingAnimationComplete()">
+        Angular Example - Typing Animation Directive
+    </span>
+    <br>
+    <span typingAnimation [typeSpeed]="50" [condition]="start" [startDelay]="1000">
+        {{ stringInterpolation }}
+    </span>
+    <br>
+    <span typingAnimation [typeSpeed]="50" [condition]="start" [startDelay]="1000" [hideCursorOnComplete]="true">
+        Angular Example - Typing Animation Directive (hideCursorOnComplete)
+    </span>
+</div>
